@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @account.username %>
+</p>
+
+<p>
+  <strong>Identifier:</strong>
+  <%= @account.identifier %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @account.service %>
+</p>
+
+<p>
+  <strong>Raw:</strong>
+  <pre><%= JSON.pretty_generate @account.raw %></pre>
+</p>
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>
